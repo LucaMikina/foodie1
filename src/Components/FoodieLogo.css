@@ -1,0 +1,85 @@
+.foodie-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.foodie-logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 0;
+    overflow: visible;
+}
+
+.letter-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo-letter {
+    font-family: "Quicksand", sans-serif;
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+/* slovo i */
+.foodie-i {
+    position: relative;
+}
+
+/* sakriva originalnu tačku */
+.foodie-i::after {
+    content: "";
+    position: absolute;
+
+    top: 8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 23px;
+    height: 23px;
+
+    background: #f8f5f5;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* vatrica */
+.flame-wrapper {
+    position: absolute;
+    top: 5px;
+    left: 6%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.cursor-wrapper {
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+.cursor-line {
+    width: 3px;
+    height: 82px;
+    background: #e52d12;
+    border-radius: 999px;
+}
+
+@media (max-width: 768px) {
+    .logo-letter {
+        font-size: 75px;
+    }
+
+    .cursor-line {
+        height: 58px;
+    }
+
+    .flame-wrapper {
+        top: 4px;
+    }
+}
